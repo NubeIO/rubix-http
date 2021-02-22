@@ -8,9 +8,9 @@ class RubixResource(Resource):
     def dispatch_request(self, *args, **kwargs):
         try:
             return super().dispatch_request(*args, **kwargs)
-        except IntegrityError or OperationalError as e:
+        except (IntegrityError, OperationalError) as e:
             abort(400, message=str(e.orig))
-        except ValueError or BadDataException as e:
+        except (ValueError, BadDataException) as e:
             abort(400, message=str(e))
         except NotFoundException as e:
             abort(404, message=str(e))
