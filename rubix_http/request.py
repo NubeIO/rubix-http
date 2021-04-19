@@ -2,8 +2,6 @@ import json
 
 import requests
 from flask import Response
-from flask_restful import abort
-from requests.exceptions import ConnectionError
 
 from rubix_http.method import HttpMethod
 
@@ -41,5 +39,5 @@ def __gw_http_request(url: str, body: json, http_method: HttpMethod):
         resp = requests.request(http_method.value, url, json=body)
         response = Response(resp.content, resp.status_code, resp.raw.headers.items())
         return response
-    except ConnectionError:
-        abort(404)
+    except Exception as e:
+        return Response(str(e), 404)
