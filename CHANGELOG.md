@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## [v1.1.1](https://github.com/NubeIO/mqtt-rest-bridge/tree/v1.1.1) (2020-04-19)
+### Added
+- Handle Request Exception
+
 ## [v1.1.0](https://github.com/NubeIO/mqtt-rest-bridge/tree/v1.1.0) (2020-04-07)
 ### Added
 - Create functions for Gateway API calls
