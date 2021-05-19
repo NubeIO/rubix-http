@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## [v1.2.0](https://github.com/NubeIO/mqtt-rest-bridge/tree/v1.2.0) (2020-05-19)
+### Added
+- Add exceptions
+
 ## [v1.1.1](https://github.com/NubeIO/mqtt-rest-bridge/tree/v1.1.1) (2020-04-19)
 ### Added
 - Handle Request Exception
