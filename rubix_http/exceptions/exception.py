@@ -1,38 +1,38 @@
-class BadDataException(BaseException):
+class BadDataException(Exception):
     def __init__(self, *args):
         super(BadDataException, self).__init__(*args)
 
 
-class UnauthorizedException(BaseException):
+class UnauthorizedException(Exception):
     def __init__(self, *args):
         super(UnauthorizedException, self).__init__(*args)
 
 
-class ForbiddenException(BaseException):
+class ForbiddenException(Exception):
     def __init__(self, *args):
         super(ForbiddenException, self).__init__(*args)
 
 
-class NotFoundException(BaseException):
+class NotFoundException(Exception):
     def __init__(self, *args):
         super(NotFoundException, self).__init__(*args)
 
 
-class PreConditionException(BaseException):
+class PreConditionException(Exception):
     def __init__(self, *args):
         super(PreConditionException, self).__init__(*args)
 
 
-class InternalServerErrorException(BaseException):
+class InternalServerErrorException(Exception):
     def __init__(self, *args):
         super(InternalServerErrorException, self).__init__(*args)
 
 
-class NotImplementedException(BaseException):
+class NotImplementedException(Exception):
     def __init__(self, *args):
         super(NotImplementedException, self).__init__(*args)
 
 
-class GatewayTimeoutException(BaseException):
+class GatewayTimeoutException(Exception):
     def __init__(self, *args):
         super(GatewayTimeoutException, self).__init__(*args)
