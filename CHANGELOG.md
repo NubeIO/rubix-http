@@ -1,4 +1,7 @@
 # CHANGELOG
+## [v1.3.0](https://github.com/NubeIO/mqtt-rest-bridge/tree/v1.3.0) (2020-05-27)
+### Added
+- Change exceptions from BaseException to Exception
 
 ## [v1.2.0](https://github.com/NubeIO/mqtt-rest-bridge/tree/v1.2.0) (2020-05-19)
 ### Added
